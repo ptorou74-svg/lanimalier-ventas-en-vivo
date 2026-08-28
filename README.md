@@ -83,15 +83,17 @@ Doble clic en `index.html` → se abre en el navegador por defecto. Para proyect
 
 (El archivo se llamaba `ventas-en-vivo.html`; se renombró a `index.html` para que Vercel lo sirva directo en la raíz del sitio sin configuración extra.)
 
-## 6. Publicación en GitHub + Vercel
+## 6. Publicación en GitHub + Vercel — listo
 
-El repositorio local ya está listo (`git init`, archivos agregados y commit hecho). Ya tienes cuenta creada en GitHub y en Vercel.
+- **Repositorio (privado):** https://github.com/ptorou74-svg/lanimalier-ventas-en-vivo
+- **Sitio publicado:** **https://lanimalier-ventas-en-vivo-nine.vercel.app**
 
-Para terminar de publicarlo falta lo único que no puedo generar yo: la **URL del repositorio de GitHub** que creaste y un **token de acceso** con permiso de escritura solo sobre ese repo, para poder hacer el `push` en tu nombre. No puedo iniciar sesión en tus cuentas ni crear ese token por ti — es algo que solo se genera desde tu propia sesión de GitHub.
+Pendiente opcional: conectar el repositorio de GitHub al proyecto de Vercel (`vercel git connect`) para que cada `push` futuro se publique solo. Ese comando puntual quedó bloqueado por el sistema de seguridad de Claude Code (vincula permisos entre dos cuentas externas), así que falta hacerlo manualmente:
 
-Una vez reciba esos dos datos:
-1. Conecto el repositorio local al remoto y subo el código (`git push`).
-2. Si el repositorio ya está importado en Vercel, la publicación queda automática apenas se recibe el `push` — no hace falta nada más de tu parte.
+1. Entra a https://vercel.com/paola25/lanimalier-ventas-en-vivo/settings/git
+2. Botón **"Connect Git Repository"** → elegir `ptorou74-svg/lanimalier-ventas-en-vivo`.
+
+Mientras tanto, para publicar un cambio nuevo basta con pedirlo — se sube a GitHub y se despliega a Vercel de nuevo.
 3. Se actualiza esta sección con el link final una vez esté arriba.
 
 ## 7. Otras notas

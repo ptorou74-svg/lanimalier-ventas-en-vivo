@@ -83,18 +83,20 @@ Doble clic en `index.html` → se abre en el navegador por defecto. Para proyect
 
 (El archivo se llamaba `ventas-en-vivo.html`; se renombró a `index.html` para que Vercel lo sirva directo en la raíz del sitio sin configuración extra.)
 
-## 6. Publicación en GitHub + Vercel — listo
+## 6. Publicación — listo, en dos sitios
 
-- **Repositorio (privado):** https://github.com/ptorou74-svg/lanimalier-ventas-en-vivo
-- **Sitio publicado:** **https://lanimalier-ventas-en-vivo-nine.vercel.app**
+- **Repositorio (público):** https://github.com/ptorou74-svg/lanimalier-ventas-en-vivo
+- **Sitio en Vercel:** **https://lanimalier-ventas-en-vivo-nine.vercel.app**
+- **Sitio en GitHub Pages:** **https://ptorou74-svg.github.io/lanimalier-ventas-en-vivo/**
 
-Pendiente opcional: conectar el repositorio de GitHub al proyecto de Vercel (`vercel git connect`) para que cada `push` futuro se publique solo. Ese comando puntual quedó bloqueado por el sistema de seguridad de Claude Code (vincula permisos entre dos cuentas externas), así que falta hacerlo manualmente:
+El repositorio se pasó a público porque GitHub Pages no funciona con repositorios privados en el plan gratuito — se hizo con tu confirmación. El código no tiene nada secreto: la clave que usa el tablero es de solo lectura, pensada justamente para quedar visible en el navegador.
+
+Pendiente opcional: conectar el repositorio de GitHub al proyecto de Vercel (`vercel git connect`) para que cada `push` futuro se publique solo ahí también (GitHub Pages ya se actualiza solo con cada `push` a `main`, sin nada extra que hacer). Ese comando puntual para Vercel quedó bloqueado por el sistema de seguridad de Claude Code (vincula permisos entre dos cuentas externas), así que falta hacerlo manualmente:
 
 1. Entra a https://vercel.com/paola25/lanimalier-ventas-en-vivo/settings/git
 2. Botón **"Connect Git Repository"** → elegir `ptorou74-svg/lanimalier-ventas-en-vivo`.
 
-Mientras tanto, para publicar un cambio nuevo basta con pedirlo — se sube a GitHub y se despliega a Vercel de nuevo.
-3. Se actualiza esta sección con el link final una vez esté arriba.
+Mientras tanto, para publicar un cambio nuevo en Vercel basta con pedirlo — se sube a GitHub (lo que ya actualiza GitHub Pages solo) y se corre el deploy de Vercel de nuevo.
 
 ## 7. Otras notas
 
